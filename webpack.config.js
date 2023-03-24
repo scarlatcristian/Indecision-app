@@ -10,8 +10,14 @@ module.exports = {
     rules: [
       {
         loader: "babel-loader",
+        // looking for any file that ends in .js
         test: /\.js$/,
         exclude: /node_modules/,
+      },
+      {
+        // looking for any file that ends in .css
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
