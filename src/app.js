@@ -1,8 +1,8 @@
-import { createRoot } from "react-dom/client";
+import ReactDom from "react-dom";
 import React from "react";
 import IndecisionApp from "./components/IndecisionApp";
-import "./styles/styles.css";
+import "./styles/styles.scss";
 
-const root = createRoot(document.querySelector("#app"));
+const root = document.querySelector("#app");
 
-root.render(<IndecisionApp />);
+ReactDom.render(<IndecisionApp />, root);

@@ -16,8 +16,8 @@ module.exports = {
       },
       {
         // looking for any file that ends in .css
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
